@@ -1,2 +1,32 @@
-# **Projeto pitaya**
+Scripts de conexão Unity -> AWS
 
+requisitos:
+unity: https://unity.com
+xampp: https://www.apachefriends.org/pt_br/index.html
+
+arquivos: 
+
+existem dois scripts dentro da pasta unity 
+* uploadscore: Responsável por enviar a pontuação e o nick do usuário para o script em php
+* webconnect: responsável por fazer a conexão do unity com a o script php
+
+existem 3 arquivos na pasta xammp/unitydb
+
+*connection.php: recebe uma requisição do unity e serve de ponte para conexão do unity com o banco de dados
+*date.php: retorna a data atual do sistema
+*points.php: recebe a pontuação do jogador e envia para o banco de dados 
+
+existem dois arquivos na pasta sql
+
+*jogador_save.sql: script utilizado para criação da tabela que contém os dados do jogador 
+*consultas.sql: script utilizado para fazer algumas verificações internas nos dados da tabela 
+
+funcionamento:
+
+após a instalação do unity e do xampp
+
+para começar você primeiro precia aplicar os scripts do unity na lógica do projeto que você está desenvolvendo,
+uma vez configurado dentro do seu aplicativo ou jogo você precisa copiar a pasta "unitydb" (pode ser renomeada mas
+vai ter que mudar nos scripts do unity o caminho) para a pasta (local de instalação)/htdocs, para testar é só ir em
+localhost/unitydb/(nomedoarquivo.php) depois disso é só iniciar as opções de Apache e Mysql no Xampp (tenha certeza de 
+não ter nada rodando no seu localhost na porta 3306) e testar o programa no unity.
