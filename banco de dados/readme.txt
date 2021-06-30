@@ -16,6 +16,10 @@ existem 3 arquivos na pasta xammp/unitydb
 *date.php: retorna a data atual do sistema
 *points.php: recebe a pontuação do jogador e envia para o banco de dados 
 
+existem dois arquivos na pasta sql
+
+*jogador_save.sql: script utilizado para criação da tabela que contém os dados do jogador 
+*consultas.sql: script utilizado para fazer algumas verificações internas nos dados da tabela 
 
 funcionamento:
 
