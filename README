@@ -3,6 +3,7 @@ Scripts de conexão Unity -> AWS
 requisitos:
 unity: https://unity.com
 xampp: https://www.apachefriends.org/pt_br/index.html
+dbeaver: https://dbeaver.io/download/
  
 Os arquivos citados abaixo estão na pasta banco de dados
 
@@ -32,4 +33,5 @@ para começar você primeiro precia aplicar os scripts do unity na lógica do pr
 uma vez configurado dentro do seu aplicativo ou jogo você precisa copiar a pasta "unitydb" (pode ser renomeada mas
 vai ter que mudar nos scripts do unity o caminho) para a pasta (local de instalação)/htdocs, para testar é só ir em
 localhost/unitydb/(nomedoarquivo.php) depois disso é só iniciar as opções de Apache e Mysql no Xampp (tenha certeza de 
-não ter nada rodando no seu localhost na porta 3306) e testar o programa no unity.
+não ter nada rodando no seu localhost na porta 3306) e testar o programa no unity. O dbeaver é opcional (podendo ser
+trocado por outro de sua escolha)mas é usando para checar as informações que estão sendo armazenadas no banco de dados.
